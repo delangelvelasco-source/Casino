@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090909">
+<title>Casino | Tragamonedas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lights"></div>
+<main class="app">
+<header class="topbar">
+<div><span class="eyebrow">CASINO VIRTUAL</span><h1>🎰 CASINO</h1></div>
+<div class="balance"><span>FICHAS</span><strong id="balance">1,000</strong></div>
+</header>
+<section class="machine-card">
+<div class="machine-top">♠ <span>TRAGAMONEDAS</span> ♠</div>
+<div class="reels" aria-label="Tragamonedas">
+<div class="reel"><span id="reel1">🍒</span></div>
+<div class="reel"><span id="reel2">💎</span></div>
+<div class="reel"><span id="reel3">7️⃣</span></div>
+</div>
+<div class="payline"></div>
+<p id="message">¡Prueba tu suerte!</p>
+<div class="controls">
+<button class="bet" data-bet="10">10</button>
+<button class="bet active" data-bet="25">25</button>
+<button class="bet" data-bet="50">50</button>
+<button class="bet" data-bet="100">100</button>
+</div>
+<button id="spin" class="spin">GIRAR <span>↻</span></button>
+</section>
+<section class="stats">
+<div><span>APUESTA</span><strong id="currentBet">25</strong></div>
+<div><span>ÚLTIMO PREMIO</span><strong id="lastWin">0</strong></div>
+<div><span>GIROS</span><strong id="spins">0</strong></div>
+</section>
+<section class="lobby"><h2>JUEGOS</h2><div class="games">
+<button class="game active">🎰<small>Tragamonedas</small></button>
+<button class="game" disabled>🎡<small>Ruleta</small></button>
+<button class="game" disabled>🃏<small>Blackjack</small></button>
+<button class="game" disabled>🎲<small>Dados</small></button>
+</div></section>
+<footer>Fichas virtuales sin valor monetario · Versión inicial</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
